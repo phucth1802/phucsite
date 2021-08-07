@@ -12,7 +12,7 @@
         .header {
             background-color: black;
             color: rgb(219, 172, 43);
-            padding: 1px;
+            padding: 5px;
         }
         
         .header__navbar {
@@ -48,8 +48,9 @@
         }
         
         .header__content p {
-            margin-left: 300px;
-            margin-top: 80px;
+    
+            margin-left: 150px;
+            margin-top: 40px;
             color: white;
         }
         
@@ -58,14 +59,15 @@
         }
         
         .header__button {
-            margin-top: 40px;
+            margin-top: 17px;
+            margin-right: -50px;
             background-color: rgb(11, 196, 226);
-            font-size:20px;
+            font-size:16px;
             font-weight: 800;
             text-align: center;
-            border-radius: 2px;
+            border-radius: 50px;
             line-height: 16px;
-            height: 70px;
+            height: 60px;
             padding: 12px 0;
             position: relative;
             min-width: 200px;
@@ -87,7 +89,7 @@
         .header ul li {
             padding: 40px;
             box-sizing: border-box;
-            margin-bottom: -40px;
+            margin-bottom: -20px;
             float: left;
             position: relative;
         }
@@ -120,14 +122,14 @@
         }
         
         .header ul li:hover {
-            padding-bottom: 20px;
-            border-bottom: 3px solid #FABE1E;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #FABE1E;
         }
         
         .header ul li {
-            padding: 40px;
+            padding: 20px;
             box-sizing: border-box;
-            margin-bottom: -40px;
+            margin-bottom: -1px;
             float: left;
             position: relative;
         }
@@ -139,14 +141,14 @@
         
         .header ul li ul {
             position: absolute;
-            top: 80px;
+            top: 40px;
             left: -10px;
             visibility: hidden;
         }
         
         .header ul li ul li {
             border-color: antiquewhite;
-            width: 50px;
+            width: 100px;
         }
         
         .header ul li:hover li {
@@ -156,61 +158,75 @@
         
         .carousel {
             background-image: url(../images/lol.jpg);
-            height: 1000px;
-            background-position: center;
+            height: 688px;
+            background-position:initial;
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size:contain;
+            overflow-x: hidden;
+
         }
         /* BANNER CSS  */
         
         .banner__content {
             text-align: center;
-            font-size: 30px;
+            font-size: 20px;
         }
         
-        .banner img {
+        .container {
+            display: flex;
+            width: 100%;
+            padding: 4% 2%;
+            box-sizing: border-box;
+            height: 100vh;
+       }
+        .box {
+            flex: 1;
+            overflow: hidden;
+            transition: 0.5s;
+            margin: 0 2%;
+            box-shadow: 0 20px 30px rgba(0, 0, 0, .1);
+            line-height: 0;
+       }
+        .box > img {
+            width: 200%;
+            height: calc(100% - 10vh);
+            object-fit: cover;
+            transition: 0.5s;
+       }
+        .box > span {
+            font-size: 3.8vh;
+            display: block;
+            text-align: center;
+            height: 10vh;
+            line-height: 2.6;
+       }
+        .box:hover {
+            flex: 1 1 50%;
+       }
+        .box:hover > img {
             width: 100%;
             height: 100%;
-        }
-        
-        .banner__left {
-            width: 50%;
-            height: 100%;
-            float: left;
-        }
-        
-        .banner__img {
-            padding: 0 10px 10px 0;
-        }
-        
-        .padding {
-            padding: 0 20px 30px 0;
-        }
-        
-        .view { 
-            color :rgb(255, 255, 255);
-            font-size: 25px;
-            margin-left: 50px;
-            font-family: 'Atkinson Hyperlegible', sans-serif;
-        }
-        
-        a:hover {
-            color: gray;
-            font-family: 'Atkinson Hyperlegible', sans-serif;
-        }
+       }
+       .view {
+           font-size:20px;
+           margin-left: 600px;
+       }
         /* DUC CSS  */
         
         .duc {
-            background-image: url(../images/ruined-king-a-league-of-legends-story-uhdpaper.com-hd-8.1191\ \(1\).jpg);
-            height: 700px;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+            video {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+                object-fit: cover;
+               }
         }
         
         .duc__button {
             background-color: rgb(11, 196, 226);
-            font-size: 16px;
+            font-size: 12px;
             font-weight: 800;
             text-align: center;
             border-radius: 2px;
@@ -230,6 +246,7 @@
             color: white;
             text-align: center;
             padding: 10px;
+            font-size: 12px;
         }
         
         .Foot_item {
