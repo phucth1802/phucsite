@@ -162,6 +162,7 @@
             background-position:cover;
             background-repeat: no-repeat;
             background-size:contain;
+            display: flex;
             overflow-x: hidden;
 
         }
@@ -217,11 +218,13 @@
         .duc {
             video {
                 position: cover;
+                display: flex;
                 top: 0;
                 left: 0;
                 width: 100%;
                 height: 100vh;
                 object-fit: cover;
+
                }
         }
         
