@@ -159,7 +159,7 @@
         .carousel {
             background-image: url(../images/lol.jpg);
             height: 688px;
-            background-position:initial;
+            background-position:cover;
             background-repeat: no-repeat;
             background-size:contain;
             overflow-x: hidden;
@@ -210,12 +210,13 @@
        .view {
            font-size:17px;
            margin-left: 600px;
+           text-decoration: none;
        }
         /* DUC CSS  */
         
         .duc {
             video {
-                position: absolute;
+                position: cover;
                 top: 0;
                 left: 0;
                 width: 100%;
@@ -251,4 +252,5 @@
         
         .Foot_item {
             margin: 10px;
+         text-decoration: none;
         }
