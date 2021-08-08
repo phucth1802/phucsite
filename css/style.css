@@ -158,6 +158,7 @@
         /* CAROUSEL CSS */
         
         .carousel {
+            margin: 0 auto;
             background-image: url(../images/lol.jpg);
             height: 688px;
             background-position:cover;
@@ -218,6 +219,7 @@
         
         .duc {
             video {
+                margin: 0 auto;
                 position: cover;
                 display: flex;
                 top: 0;
