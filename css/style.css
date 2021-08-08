@@ -3,6 +3,7 @@
         * {
             box-sizing: border-box;
         }
+        .baoquat{margin: 0 auto;}
         
         .clear {
             clear: both;
